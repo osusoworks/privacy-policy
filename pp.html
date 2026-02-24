@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World of Flips (orimekun) - プライバシーポリシー">
+    <title>プライバシーポリシー | World of Flips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 40%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, var(--primary-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 1.5rem;
+            background: var(--primary);
+            margin-right: 1rem;
+            border-radius: 2px;
+        }
+
+        p,
+        ul {
+            color: var(--text-dim);
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--primary);
+            position: absolute;
+            left: -1.5rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">World of Flips (orimekun)</p>
+        </header>
+
+        <main class="card">
+            <section>
+                <h2>1. 情報の収集について</h2>
+                <p>当アプリ「World of Flips (orimekun)」は、ユーザーの個人情報を一切収集、保存、または送信することはありません。</p>
+                <ul>
+                    <li>氏名、メールアドレスなどの個人情報の入力は不要です。</li>
+                    <li>デバイス内の連絡先や写真、位置情報などへのアクセスも行いません。</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. 必要な権限とその利用目的</h2>
+                <p>当アプリは、その機能を実現するために以下の権限を使用します。</p>
+                <ul>
+                    <li><strong>他のアプリの上に重ねて表示 (SYSTEM_ALERT_WINDOW):</strong>
+                        画面上に「折り目」のエフェクトを表示するために使用します。この権限は描画のみに使用され、他のアプリの情報を読み取ったり、操作を傍受したりすることはありません。</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. 広告と分析ツール</h2>
+                <p>当アプリでは、現在のところ第三者による広告配信やアクセス解析ツール（Google Analytics, Firebase
+                    Analyticsなど）は一切使用しておりません。ユーザーの行動データが外部に送信されることはありません。</p>
+            </section>
+
+            <section>
+                <h2>4. プライバシーポリシーの変更</h2>
+                <p>本プライバシーポリシーの内容は、必要に応じて変更することがあります。重要な変更がある場合には、アプリ内または適切な方法でユーザーに通知します。</p>
+            </section>
+
+            <section>
+                <h2>5. お問い合わせ</h2>
+                <p>本ポリシーに関するご質問やお問い合わせは、以下のデベロッパーまでご連絡ください。</p>
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 12px; display: inline-block;">
+                    <p style="margin: 0; color: var(--text-main);">Developer: <strong>osusoworks</strong></p>
+                    <p style="margin: 0; font-size: 0.9rem; color: var(--text-dim);">Contact: osusoworks@gmail.com</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 osusoworks. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">制定日: 2024年3月23日 (最終更新: 2026年2月23日)</p>
+        </footer>
+    </div>
+</body>
+
+</html>
